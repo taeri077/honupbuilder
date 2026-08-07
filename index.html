@@ -179,97 +179,84 @@
         </section>
 
         <!-- Building Log Section -->
-        <section id="building-log" class="py-20 bg-white scroll-mt-24">
-          <div class="max-w-6xl mx-auto px-6">
-
-            <!-- 섹션 헤더 -->
-            <div class="mb-12">
-              <p class="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">Building Log</p>
-              <h2 class="text-3xl font-bold text-gray-900">Live updates on current and past projects.</h2>
+        <section class="max-w-container-max mx-auto px-gutter w-full scroll-mt-24" id="building-log">
+            <div class="mb-lg">
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-xs">Building Log</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">Live updates on current and past projects.</p>
             </div>
-
+            
             <!-- 3열 그리드 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
 
-              <!-- 카드 1: Yearsvow -->
-              <div class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                <!-- 썸네일 (16:9) -->
-                <a href="https://yearsvow.com" target="_blank" rel="noopener noreferrer" class="block w-full" style="aspect-ratio: 16/9; overflow: hidden; background: #f3f4f6;">
-                  <img
-                    src="https://api.microlink.io/?url=https://yearsvow.com&screenshot=true&meta=false&embed=screenshot.url"
-                    alt="Yearsvow 사이트 썸네일"
-                    style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
-                    loading="lazy"
-                    onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"
-                  />
-                </a>
-                <!-- 카드 본문 -->
-                <div class="p-5">
-                  <div class="flex items-center gap-2 mb-3">
-                    <span class="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded">Live</span>
-                    <span class="text-xs text-gray-400">MVP LIVE</span>
-                  </div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">Yearsvow</h3>
-                  <p class="text-sm text-gray-500 mb-4">AI 웨딩 사진 서비스. 시니어 커플을 위한 리마인드 웨딩.</p>
-                  <a href="https://yearsvow.com" target="_blank" rel="noopener noreferrer"
-                     class="text-sm font-medium text-blue-600 hover:underline">
-                    Visit Site →
-                  </a>
+                <!-- 카드 1: Yearsvow -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+                    <!-- 썸네일 (16:9) -->
+                    <a href="https://yearsvow.com" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
+                        <img src="https://api.microlink.io/?url=https://yearsvow.com&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
+                             alt="Yearsvow 사이트 썸네일"
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
+                    </a>
+                    <!-- 카드 본문 -->
+                    <div class="p-md flex flex-col flex-grow">
+                        <div class="flex items-center gap-sm mb-xs">
+                            <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Live</span>
+                            <span class="font-body-md text-body-md text-outline">MVP LIVE</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">Yearsvow</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">AI 웨딩 사진 서비스. 시니어 커플을 위한 리마인드 웨딩.</p>
+                        <a href="https://yearsvow.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+                            Visit Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
 
-              <!-- 카드 2: ImGuardian Pro -->
-              <div class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                <a href="https://imguardian-pro.mutrasite.com" target="_blank" rel="noopener noreferrer" class="block w-full" style="aspect-ratio: 16/9; overflow: hidden; background: #f3f4f6;">
-                  <img
-                    src="https://api.microlink.io/?url=https://imguardian-pro.mutrasite.com&screenshot=true&meta=false&embed=screenshot.url"
-                    alt="ImGuardian Pro 사이트 썸네일"
-                    style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
-                    loading="lazy"
-                    onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"
-                  />
-                </a>
-                <div class="p-5">
-                  <div class="flex items-center gap-2 mb-3">
-                    <span class="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded">Launched</span>
-                    <span class="text-xs text-gray-400">SaaS</span>
-                  </div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">ImGuardian Pro</h3>
-                  <p class="text-sm text-gray-500 mb-4">AI 보안 감사 SaaS. BYOK 기반 소프트웨어 취약점 진단.</p>
-                  <a href="https://imguardian-pro.mutrasite.com" target="_blank" rel="noopener noreferrer"
-                     class="text-sm font-medium text-blue-600 hover:underline">
-                    Visit Site →
-                  </a>
+                <!-- 카드 2: ImGuardian Pro -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+                    <a href="https://imguardian-pro.mutrasite.com" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
+                        <img src="https://api.microlink.io/?url=https://imguardian-pro.mutrasite.com&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
+                             alt="ImGuardian Pro 사이트 썸네일"
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
+                    </a>
+                    <div class="p-md flex flex-col flex-grow">
+                        <div class="flex items-center gap-sm mb-xs">
+                            <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Launched</span>
+                            <span class="font-body-md text-body-md text-outline">SaaS</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">ImGuardian Pro</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">AI 보안 감사 SaaS. BYOK 기반 소프트웨어 취약점 진단.</p>
+                        <a href="https://imguardian-pro.mutrasite.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+                            Visit Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
 
-              <!-- 카드 3: InciGuardian -->
-              <div class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition-shadow">
-                <a href="https://inciguardian.mutrasite.com" target="_blank" rel="noopener noreferrer" class="block w-full" style="aspect-ratio: 16/9; overflow: hidden; background: #f3f4f6;">
-                  <img
-                    src="https://api.microlink.io/?url=https://inciguardian.mutrasite.com&screenshot=true&meta=false&embed=screenshot.url"
-                    alt="InciGuardian 사이트 썸네일"
-                    style="width: 100%; height: 100%; object-fit: cover; object-position: top;"
-                    loading="lazy"
-                    onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"
-                  />
-                </a>
-                <div class="p-5">
-                  <div class="flex items-center gap-2 mb-3">
-                    <span class="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded">Live</span>
-                    <span class="text-xs text-gray-400">Global</span>
-                  </div>
-                  <h3 class="text-lg font-bold text-gray-900 mb-1">InciGuardian</h3>
-                  <p class="text-sm text-gray-500 mb-4">글로벌 화장품 성분 안전성 스크리너.</p>
-                  <a href="https://inciguardian.mutrasite.com" target="_blank" rel="noopener noreferrer"
-                     class="text-sm font-medium text-blue-600 hover:underline">
-                    Visit Site →
-                  </a>
+                <!-- 카드 3: InciGuardian -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+                    <a href="https://inciguardian.mutrasite.com" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
+                        <img src="https://api.microlink.io/?url=https://inciguardian.mutrasite.com&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
+                             alt="InciGuardian 사이트 썸네일"
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
+                    </a>
+                    <div class="p-md flex flex-col flex-grow">
+                        <div class="flex items-center gap-sm mb-xs">
+                            <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Live</span>
+                            <span class="font-body-md text-body-md text-outline">Global</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">InciGuardian</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">글로벌 화장품 성분 안전성 스크리너.</p>
+                        <a href="https://inciguardian.mutrasite.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+                            Visit Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
                 </div>
-              </div>
 
             </div>
-          </div>
         </section>
 
         <!-- E-books Section -->
