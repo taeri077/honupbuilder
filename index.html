@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="light" lang="ko">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>HONUP Builder — 한국인 솔로프레너의 글로벌 빌딩 로그</title>
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config from Brand Anchors -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#e5e9eb",
+                        "secondary-fixed": "#ffdcc5",
+                        "on-background": "#181c1e",
+                        "tertiary-fixed-dim": "#bcc7dd",
+                        "outline": "#74777f",
+                        "surface": "#f7fafc",
+                        "on-primary-container": "#86a0cd",
+                        "tertiary": "#162132",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f7fafc",
+                        "tertiary-container": "#2b3648",
+                        "inverse-on-surface": "#eef1f3",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container": "#ebeef0",
+                        "primary-container": "#1a365d",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d7dadc",
+                        "surface-container-highest": "#e0e3e5",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#111c2c",
+                        "secondary": "#944b00",
+                        "primary-fixed-dim": "#adc7f7",
+                        "surface-container-low": "#f1f4f6",
+                        "on-tertiary-container": "#949fb4",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "secondary-container": "#fe9743",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#301400",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb783",
+                        "on-surface": "#181c1e",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "surface-tint": "#455f88",
+                        "on-secondary-container": "#6b3500",
+                        "surface-bright": "#f7fafc",
+                        "surface-variant": "#e0e3e5",
+                        "inverse-primary": "#adc7f7",
+                        "outline-variant": "#c4c6cf",
+                        "on-surface-variant": "#43474e",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#d8e3fa",
+                        "primary": "#002045",
+                        "on-tertiary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-fixed": "#001b3c",
+                        "on-secondary-fixed-variant": "#703700"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "16px",
+                        "container-max": "1200px",
+                        "xl": "64px",
+                        "xs": "8px",
+                        "base": "4px",
+                        "lg": "40px",
+                        "gutter": "24px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "button": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "display": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "button": ["14px", { "lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    },
+                    "boxShadow": {
+                        "level1": "0px 2px 4px rgba(26, 54, 93, 0.04)",
+                        "level2": "0px 10px 15px -3px rgba(26, 54, 93, 0.08)"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+        <div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-xl">
+            <!-- Brand -->
+            <a class="text-headline-md font-headline-md text-primary dark:text-primary-fixed tracking-tight hover:opacity-80 transition-opacity active:scale-95 duration-200" href="#">
+                HONUP Builder
+            </a>
+            <!-- Desktop Nav -->
+            <ul class="hidden md:flex gap-gutter items-center text-body-md font-body-md">
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#building-log">Building Log</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#e-books">E-books</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#subscribe">Newsletter</a></li>
+            </ul>
+            <!-- Actions -->
+            <div class="flex items-center gap-sm">
+                <a class="hidden md:inline-flex bg-primary text-on-primary font-button text-button px-sm py-xs rounded-lg hover:bg-primary/90 transition-colors shadow-level1" href="#subscribe">Subscribe</a>
+                <!-- Mobile Menu Toggle -->
+                <button class="md:hidden text-primary p-xs hover:bg-surface-container rounded-DEFAULT transition-colors" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant/30 px-gutter py-md">
+            <ul class="flex flex-col gap-sm text-body-md font-body-md mb-sm">
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#building-log">Building Log</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#e-books">E-books</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#subscribe">Newsletter</a></li>
+            </ul>
+            <a class="inline-flex w-full justify-center bg-primary text-on-primary font-button text-button px-sm py-xs rounded-lg hover:bg-primary/90 transition-colors" href="#subscribe">Subscribe</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Canvas -->
+    <main class="flex-grow pt-[104px] pb-xl flex flex-col gap-xl">
+        <!-- Hero Section -->
+        <section class="max-w-container-max mx-auto px-gutter w-full flex flex-col items-center text-center py-xl">
+            <span class="bg-surface-container-high text-primary font-label-caps text-label-caps px-sm py-base rounded-full mb-md shadow-level1">솔로프레너 빌딩 로그</span>
+            <h1 class="font-display text-display md:text-[64px] text-primary mb-md max-w-3xl leading-tight tracking-tighter">
+                나는 혼자 만든다. Globally.
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                한국인 솔로프레너의 글로벌 서비스 제작 일지 — 아이디어부터 배포까지, 매주 실전 이야기를 보냅니다.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-sm">
+                <a class="bg-secondary-container text-on-secondary font-button text-button px-lg py-sm rounded-lg hover:bg-secondary transition-colors shadow-level2" href="#subscribe">
+                    Get Weekly Insights
+                </a>
+                <a class="border border-primary text-primary bg-transparent font-button text-button px-lg py-sm rounded-lg hover:bg-primary-fixed/30 transition-colors" href="#building-log">
+                    Explore Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Building Log Section -->
+        <section class="max-w-container-max mx-auto px-gutter w-full scroll-mt-24" id="building-log">
+            <div class="mb-lg">
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-xs">Building Log</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant">Live updates on current and past projects.</p>
+            </div>
+            <div class="relative border-l border-outline-variant/50 ml-xs md:ml-0 md:pl-lg">
+                <!-- Project A: Yearsvow -->
+                <div class="mb-lg pl-sm relative group">
+                    <div class="absolute -left-[21px] md:-left-[29px] top-1 w-3 h-3 bg-[#48BB78] rounded-full border-2 border-surface group-hover:scale-125 transition-transform shadow-level1"></div>
+                    <div class="bg-surface-container-lowest p-md rounded-lg shadow-level1 border border-outline-variant/30 hover:shadow-level2 transition-shadow group-hover:-translate-y-1 duration-300">
+                        <div class="flex items-center justify-between mb-xs">
+                            <div class="flex items-center gap-sm">
+                                <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Live</span>
+                                <span class="font-body-md text-body-md text-outline">MVP LIVE</span>
+                            </div>
+                            <a href="https://yearsvow.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs">
+                                Visit Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                            </a>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">Yearsvow</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">AI 웨딩 사진 서비스. 시니어 커플을 위한 리마인드 웨딩.</p>
+                    </div>
+                </div>
+                <!-- Project B: ImGuardian Pro -->
+                <div class="mb-lg pl-sm relative group">
+                    <div class="absolute -left-[21px] md:-left-[29px] top-1 w-3 h-3 bg-[#48BB78] rounded-full border-2 border-surface group-hover:scale-125 transition-transform shadow-level1"></div>
+                    <div class="bg-surface-container-lowest p-md rounded-lg shadow-level1 border border-outline-variant/30 hover:shadow-level2 transition-shadow group-hover:-translate-y-1 duration-300">
+                        <div class="flex items-center justify-between mb-xs">
+                            <div class="flex items-center gap-sm">
+                                <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Launched</span>
+                                <span class="font-body-md text-body-md text-outline">SaaS</span>
+                            </div>
+                            <a href="https://imguardian-pro.mutrasite.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs">
+                                Visit Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                            </a>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">ImGuardian Pro</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">AI 보안 감사 SaaS. BYOK 기반 소프트웨어 취약점 진단.</p>
+                    </div>
+                </div>
+                <!-- Project C: InciGuardian -->
+                <div class="pl-sm relative group">
+                    <div class="absolute -left-[21px] md:-left-[29px] top-1 w-3 h-3 bg-[#48BB78] rounded-full border-2 border-surface group-hover:scale-125 transition-transform shadow-level1"></div>
+                    <div class="bg-surface-container-lowest p-md rounded-lg shadow-level1 border border-outline-variant/30 hover:shadow-level2 transition-shadow group-hover:-translate-y-1 duration-300">
+                        <div class="flex items-center justify-between mb-xs">
+                            <div class="flex items-center gap-sm">
+                                <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Live</span>
+                                <span class="font-body-md text-body-md text-outline">Global</span>
+                            </div>
+                            <a href="https://inciguardian.mutrasite.com" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs">
+                                Visit Site <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                            </a>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">InciGuardian</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant">글로벌 화장품 성분 안전성 스크리너.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-books Section -->
+        <section class="bg-surface-container-low py-xl border-y border-outline-variant/20 scroll-mt-24" id="e-books">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="mb-lg text-center">
+                    <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-xs">E-books &amp; Resources</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Actionable guides distilled from real-world building experiences.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                    <!-- Book 1 -->
+                    <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 transition-shadow">
+                        <div class="bg-cover bg-center w-full h-48 border-b border-outline-variant/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCeEB6kltJJ-1InCguq1DafxQPvGvRdMCxF4oXVZ0YjaCq8xv5-7l3QaJCzrPC6ApJut660vh1SikEjvqkv8mrUdCI4aGsTYSY3qk19z3foSEE02WFUkiRBlINB-e9N68EZfa8k3CmtLXgRG58qLusdKjul1hwHxr_WSa44Wgoz0CB3f6O3xtoPH7lyIjnYsgu3Mo_A27QEx6ZboghbfeN1LOkTrlo_FqX9COPRRCPli_b4iEmotfn6')"></div>
+                        <div class="p-md flex flex-col flex-grow">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-xs line-clamp-2">아이디어 하나로 AI 앱 만드는 법</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">코딩도 서버도 없이 무료 AI 도구 3개로 실제 작동하는 서비스 만들기.</p>
+                            <a href="#subscribe" class="w-full bg-surface-container hover:bg-primary-fixed hover:text-primary-container text-primary font-button text-button py-sm rounded-DEFAULT transition-colors flex items-center justify-center gap-xs">
+                                <span class="material-symbols-outlined text-[18px]">download</span>
+                                Download Now
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Book 2 -->
+                    <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 transition-shadow">
+                        <div class="bg-cover bg-center w-full h-48 border-b border-outline-variant/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvWOvU9l7FAlOTds5ZNIzmb0KO3KzpGfq6Mg0R_mloA_qeu1ivc8dLpfVjYpqwKctET1t4uaGn0BCANQ4w9yAUulHM2vnl-DwSwbjm1kXt66OwB6ZB5Ir4ofubfivej7IiDbNGdI_DMy7Or7SEqYsJ1IKUypT9NJUY2SWyupFjxWXBzlF5m6nshWE050KAsaInf3YLYnSBA7m8PPbiCAaecCu__YKOJvrQx9gufYd8ZjLkBBN23E9d')"></div>
+                        <div class="p-md flex flex-col flex-grow">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-xs line-clamp-2">Coming Soon</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">다음 가이드 준비 중. 구독하면 먼저 받습니다.</p>
+                            <a href="#subscribe" class="w-full bg-surface-container hover:bg-primary-fixed hover:text-primary-container text-primary font-button text-button py-sm rounded-DEFAULT transition-colors flex items-center justify-center gap-xs">
+                                <span class="material-symbols-outlined text-[18px]">notifications</span>
+                                알림 받기
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Book 3 -->
+                    <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 transition-shadow">
+                        <div class="bg-cover bg-center w-full h-48 border-b border-outline-variant/20" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCALvj0mHlKTuQDzPC59d6TC3dBzQlnuuS0LmM18VDqXczcQ_j6IoN5Cz_tyF8EU73SIrRVxyy8fhOtCKvZN1hfts7OmHY6nNAiYqhwv-U3HCbIUwVU8RZqr1MEFLbApCrJ9aSWo8fMSXK1J6oHV0oe5gmgxsO0kAVtIYzu9Q69oWK-rt3XKpIlp5QiZ8KOevzQk2YjV2Say5ulBQOCaqXWGWJEfvRFqru3aXI6st28KIlAFNazM_0y')"></div>
+                        <div class="p-md flex flex-col flex-grow">
+                            <h3 class="font-headline-md text-headline-md text-primary mb-xs line-clamp-2">Coming Soon</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">다음 가이드 준비 중. 구독하면 먼저 받습니다.</p>
+                            <a href="#subscribe" class="w-full bg-surface-container hover:bg-primary-fixed hover:text-primary-container text-primary font-button text-button py-sm rounded-DEFAULT transition-colors flex items-center justify-center gap-xs">
+                                <span class="material-symbols-outlined text-[18px]">notifications</span>
+                                알림 받기
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="max-w-container-max mx-auto px-gutter w-full py-xl scroll-mt-24" id="subscribe">
+            <div class="bg-primary text-on-primary rounded-xl p-lg md:p-xl shadow-level2 relative overflow-hidden flex flex-col md:flex-row items-center gap-lg">
+                <!-- Decorative background blur -->
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="flex-1 z-10">
+                    <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-sm">매주 한 편, 글로벌 빌딩 이야기를 보냅니다.</h2>
+                    <p class="font-body-lg text-body-lg text-primary-fixed-dim mb-0">
+                        아이디어 검증부터 배포, 첫 매출까지 — 한국인 솔로프레너의 실전 기록. 무료입니다.<br/>
+                        <span class="text-secondary-fixed font-semibold">구독 즉시 · AI 앱 빌더 가이드 무료 증정</span>
+                    </p>
+                </div>
+                <div class="flex-1 w-full z-10 flex justify-center items-center">
+                    <iframe src="https://bass077.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white; border-radius: 8px;" frameborder="0" scrolling="no"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-lg mt-xl border-t border-outline-variant bg-surface-container-low dark:bg-tertiary-container">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-md">
+            <!-- Copyright -->
+            <div class="text-on-surface dark:text-on-tertiary-container font-label-caps text-label-caps">
+                © 2026 HONUP Builder · Netmedia
+            </div>
+            <!-- Links -->
+            <ul class="flex gap-md text-on-surface-variant font-label-caps text-label-caps">
+                <li><a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="https://x.com/taerijakga" target="_blank" rel="noopener noreferrer">X (Global)</a></li>
+                <li><a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="https://www.instagram.com/honup.log" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a class="hover:text-secondary-container transition-colors focus:outline-none focus:ring-2 focus:ring-primary rounded-sm px-xs py-base" href="https://velog.io/@taeri" target="_blank" rel="noopener noreferrer">Velog</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
