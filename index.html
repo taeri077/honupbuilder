@@ -134,6 +134,7 @@
             <!-- Desktop Nav -->
             <ul class="hidden md:flex gap-gutter items-center text-body-md font-body-md">
                 <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#building-log">Building Log</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#hb-log">HB Log</a></li>
                 <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#e-books">E-books</a></li>
                 <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors" href="#subscribe">Newsletter</a></li>
             </ul>
@@ -150,6 +151,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-surface border-b border-outline-variant/30 px-gutter py-md">
             <ul class="flex flex-col gap-sm text-body-md font-body-md mb-sm">
                 <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#building-log">Building Log</a></li>
+                <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#hb-log">HB Log</a></li>
                 <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#e-books">E-books</a></li>
                 <li><a class="block py-xs text-on-surface-variant hover:text-primary" href="#subscribe">Newsletter</a></li>
             </ul>
@@ -180,9 +182,9 @@
 
         <!-- Building Log Section -->
         <section class="max-w-container-max mx-auto px-gutter w-full scroll-mt-24" id="building-log">
-            <div class="mb-lg">
+            <div class="mb-lg text-center">
                 <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-xs">Building Log</h2>
-                <p class="font-body-md text-body-md text-on-surface-variant">Live updates on current and past projects.</p>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Live updates on current and past projects.</p>
             </div>
             
             <!-- 3열 그리드 -->
@@ -304,6 +306,85 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- HB Log Section -->
+        <section class="max-w-container-max mx-auto px-gutter w-full scroll-mt-24" id="hb-log">
+            <div class="mb-lg text-center">
+                <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-xs">HB Log</h2>
+                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">한국인 솔로프레너의 실전 서비스 제작기와 블로그 이야기.</p>
+            </div>
+            
+            <!-- 3열 그리드 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+
+                <!-- Article 1 -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+                    <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
+                        <img src="https://api.microlink.io/?url=https://velog.io/@taeri077/posts&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
+                             alt="솔로프레너의 AI 앱 빌딩 일지 썸네일"
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
+                    </a>
+                    <div class="p-md flex flex-col flex-grow">
+                        <div class="flex items-center gap-sm mb-xs">
+                            <span class="font-label-caps text-label-caps bg-[#EBF8FF] text-primary px-xs py-base rounded-DEFAULT">Article</span>
+                            <span class="font-body-md text-body-md text-outline">Velog 연재</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">솔로프레너의 AI 앱 빌딩 일지</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">아이디어 검증부터 MVP 배포까지 — 1인 개발자가 글로벌 서비스 라인업을 구축하는 전체 프로세스.</p>
+                        <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+                            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+                    <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
+                        <img src="https://api.microlink.io/?url=https://velog.io/@taeri077/posts&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
+                             alt="비개발자도 만드는 AI SaaS 구축 가이드 썸네일"
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
+                    </a>
+                    <div class="p-md flex flex-col flex-grow">
+                        <div class="flex items-center gap-sm mb-xs">
+                            <span class="font-label-caps text-label-caps bg-[#FFF1E5] text-secondary px-xs py-base rounded-DEFAULT">Guide</span>
+                            <span class="font-body-md text-body-md text-outline">SaaS 구축</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">비개발자도 만드는 AI SaaS 구축 가이드</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">서버리스 환경과 무료 AI 도구를 활용해 결제 및 보안 시스템을 갖춘 실전 SaaS 만드는 법.</p>
+                        <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+                            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+                    <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
+                        <img src="https://api.microlink.io/?url=https://velog.io/@taeri077/posts&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
+                             alt="글로벌 마케팅 &amp; 구독자 확보 전략 썸네일"
+                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                             loading="lazy"
+                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
+                    </a>
+                    <div class="p-md flex flex-col flex-grow">
+                        <div class="flex items-center gap-sm mb-xs">
+                            <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Growth</span>
+                            <span class="font-body-md text-body-md text-outline">마케팅</span>
+                        </div>
+                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">글로벌 마케팅 &amp; 구독자 확보 전략</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Substack 뉴스레터와 SNS를 활용하여 0명에서 1,000명의 진성 글로벌 팬층을 모으는 법.</p>
+                        <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+                            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
