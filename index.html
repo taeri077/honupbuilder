@@ -320,76 +320,34 @@
                     <p class="font-body-md text-body-md text-on-surface-variant">AI 1인 기업가 Taeri 이야기</p>
                 </div>
             </div>
-            
-            <!-- 3열 그리드 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
 
-                <!-- Article 1 -->
-                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
-                    <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
-                        <img src="https://api.microlink.io/?url=https://velog.io/@taeri077/posts&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
-                             alt="솔로프레너의 AI 앱 빌딩 일지 썸네일"
-                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                             loading="lazy"
-                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
-                    </a>
-                    <div class="p-md flex flex-col flex-grow">
-                        <div class="flex items-center gap-sm mb-xs">
-                            <span class="font-label-caps text-label-caps bg-[#EBF8FF] text-primary px-xs py-base rounded-DEFAULT">Article</span>
-                            <span class="font-body-md text-body-md text-outline">Velog 연재</span>
-                        </div>
-                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">솔로프레너의 AI 앱 빌딩 일지</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">아이디어 검증부터 MVP 배포까지 — 1인 개발자가 글로벌 서비스 라인업을 구축하는 전체 프로세스.</p>
-                        <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
-                            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
-                        </a>
-                    </div>
+            <!-- 카드 그리드 — JS가 여기에 카드를 삽입 -->
+            <div id="hb-log-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
+                <!-- 로딩 스켈레톤 6개 -->
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden animate-pulse">
+                    <div class="w-full bg-surface-container" style="aspect-ratio:16/9;"></div>
+                    <div class="p-md"><div class="h-4 bg-surface-container rounded mb-sm w-1/3"></div><div class="h-5 bg-surface-container rounded mb-xs w-3/4"></div><div class="h-4 bg-surface-container rounded w-full"></div></div>
                 </div>
-
-                <!-- Article 2 -->
-                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
-                    <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
-                        <img src="https://api.microlink.io/?url=https://velog.io/@taeri077/posts&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
-                             alt="비개발자도 만드는 AI SaaS 구축 가이드 썸네일"
-                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                             loading="lazy"
-                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
-                    </a>
-                    <div class="p-md flex flex-col flex-grow">
-                        <div class="flex items-center gap-sm mb-xs">
-                            <span class="font-label-caps text-label-caps bg-[#FFF1E5] text-secondary px-xs py-base rounded-DEFAULT">Guide</span>
-                            <span class="font-body-md text-body-md text-outline">SaaS 구축</span>
-                        </div>
-                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">비개발자도 만드는 AI SaaS 구축 가이드</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">서버리스 환경과 무료 AI 도구를 활용해 결제 및 보안 시스템을 갖춘 실전 SaaS 만드는 법.</p>
-                        <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
-                            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
-                        </a>
-                    </div>
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden animate-pulse">
+                    <div class="w-full bg-surface-container" style="aspect-ratio:16/9;"></div>
+                    <div class="p-md"><div class="h-4 bg-surface-container rounded mb-sm w-1/3"></div><div class="h-5 bg-surface-container rounded mb-xs w-3/4"></div><div class="h-4 bg-surface-container rounded w-full"></div></div>
                 </div>
-
-                <!-- Article 3 -->
-                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
-                    <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group" style="aspect-ratio: 16/9;">
-                        <img src="https://api.microlink.io/?url=https://velog.io/@taeri077/posts&amp;screenshot=true&amp;meta=false&amp;embed=screenshot.url"
-                             alt="글로벌 마케팅 &amp; 구독자 확보 전략 썸네일"
-                             class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
-                             loading="lazy"
-                             onerror="this.style.display='none'; this.parentElement.style.background='#e5e7eb';"/>
-                    </a>
-                    <div class="p-md flex flex-col flex-grow">
-                        <div class="flex items-center gap-sm mb-xs">
-                            <span class="font-label-caps text-label-caps bg-[#E6FFFA] text-[#276749] px-xs py-base rounded-DEFAULT">Growth</span>
-                            <span class="font-body-md text-body-md text-outline">마케팅</span>
-                        </div>
-                        <h3 class="font-headline-md text-headline-md text-primary mb-xs">글로벌 마케팅 &amp; 구독자 확보 전략</h3>
-                        <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">Substack 뉴스레터와 SNS를 활용하여 0명에서 1,000명의 진성 글로벌 팬층을 모으는 법.</p>
-                        <a href="https://velog.io/@taeri077/posts" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
-                            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
-                        </a>
-                    </div>
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden animate-pulse">
+                    <div class="w-full bg-surface-container" style="aspect-ratio:16/9;"></div>
+                    <div class="p-md"><div class="h-4 bg-surface-container rounded mb-sm w-1/3"></div><div class="h-5 bg-surface-container rounded mb-xs w-3/4"></div><div class="h-4 bg-surface-container rounded w-full"></div></div>
                 </div>
-
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden animate-pulse">
+                    <div class="w-full bg-surface-container" style="aspect-ratio:16/9;"></div>
+                    <div class="p-md"><div class="h-4 bg-surface-container rounded mb-sm w-1/3"></div><div class="h-5 bg-surface-container rounded mb-xs w-3/4"></div><div class="h-4 bg-surface-container rounded w-full"></div></div>
+                </div>
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden animate-pulse">
+                    <div class="w-full bg-surface-container" style="aspect-ratio:16/9;"></div>
+                    <div class="p-md"><div class="h-4 bg-surface-container rounded mb-sm w-1/3"></div><div class="h-5 bg-surface-container rounded mb-xs w-3/4"></div><div class="h-4 bg-surface-container rounded w-full"></div></div>
+                </div>
+                <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden animate-pulse">
+                    <div class="w-full bg-surface-container" style="aspect-ratio:16/9;"></div>
+                    <div class="p-md"><div class="h-4 bg-surface-container rounded mb-sm w-1/3"></div><div class="h-5 bg-surface-container rounded mb-xs w-3/4"></div><div class="h-4 bg-surface-container rounded w-full"></div></div>
+                </div>
             </div>
         </section>
 
@@ -427,5 +385,109 @@
             </ul>
         </div>
     </footer>
+<script>
+(function() {
+  const RSS2JSON = 'https://api.rss2json.com/v1/api.json?rss_url=';
+  const MICROLINK = 'https://api.microlink.io/?screenshot=true&meta=false&embed=screenshot.url&url=';
+
+  const sources = [
+    {
+      url: 'https://v2.velog.io/rss/taeri077',
+      badge: 'Article',
+      badgeStyle: 'background:#EBF8FF;color:var(--md-sys-color-primary,#1a56a0);',
+      source: 'Velog'
+    },
+    {
+      url: 'https://taeristory.mariacamp.com/feeds/posts/default?alt=rss',
+      badge: 'Story',
+      badgeStyle: 'background:#FFF1E5;color:var(--md-sys-color-secondary,#c75b00);',
+      source: 'TaeriStory'
+    }
+  ];
+
+  function stripHtml(html) {
+    const tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+  }
+
+  function truncate(str, n) {
+    const s = stripHtml(str);
+    return s.length > n ? s.slice(0, n) + '…' : s;
+  }
+
+  function makeCard(item, source) {
+    const thumbUrl = MICROLINK + encodeURIComponent(item.link);
+    const desc = truncate(item.description || item.content || '', 80);
+    const badgeStyle = source.badgeStyle;
+    const badge = source.badge;
+    const srcLabel = source.source;
+
+    return `
+      <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 hover:-translate-y-1.5 transition-all duration-300">
+        <a href="${item.link}" target="_blank" rel="noopener noreferrer"
+           class="block w-full overflow-hidden bg-surface-container border-b border-outline-variant/20 group"
+           style="aspect-ratio:16/9;">
+          <img src="${thumbUrl}"
+               alt="${item.title} 썸네일"
+               class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+               loading="lazy"
+               onerror="this.style.display='none';this.parentElement.style.background='#e5e7eb';"/>
+        </a>
+        <div class="p-md flex flex-col flex-grow">
+          <div class="flex items-center gap-sm mb-xs">
+            <span class="font-label-caps text-label-caps px-xs py-base rounded-DEFAULT"
+                  style="${badgeStyle}">${badge}</span>
+            <span class="font-body-md text-body-md text-outline">${srcLabel}</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md text-primary mb-xs">${item.title}</h3>
+          <p class="font-body-md text-body-md text-on-surface-variant mb-md flex-grow">${desc}</p>
+          <a href="${item.link}" target="_blank" rel="noopener noreferrer"
+             class="text-primary hover:underline text-sm font-semibold flex items-center gap-xs mt-auto">
+            Read Story <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          </a>
+        </div>
+      </div>`;
+  }
+
+  async function fetchFeed(source) {
+    try {
+      const res = await fetch(RSS2JSON + encodeURIComponent(source.url));
+      const data = await res.json();
+      if (data.status !== 'ok') return [];
+      return (data.items || []).slice(0, 3).map(item => ({ item, source }));
+    } catch (e) {
+      return [];
+    }
+  }
+
+  async function loadHBLog() {
+    const grid = document.getElementById('hb-log-grid');
+    if (!grid) return;
+
+    const results = await Promise.all(sources.map(fetchFeed));
+    const all = results.flat();
+
+    // 날짜 내림차순 정렬
+    all.sort((a, b) => new Date(b.item.pubDate) - new Date(a.item.pubDate));
+
+    // 최신 6개
+    const cards = all.slice(0, 6);
+
+    if (cards.length === 0) {
+      grid.innerHTML = '<p class="text-on-surface-variant col-span-3 text-center py-xl">아직 글이 없습니다.</p>';
+      return;
+    }
+
+    grid.innerHTML = cards.map(({ item, source }) => makeCard(item, source)).join('');
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadHBLog);
+  } else {
+    loadHBLog();
+  }
+})();
+</script>
 </body>
 </html>
