@@ -519,8 +519,44 @@
                     
                     <!-- Book / Resource: Taeri's Vibe Coding Roadmap -->
                     <div class="bg-surface-container-lowest rounded-lg shadow-level1 border border-outline-variant/30 overflow-hidden flex flex-col hover:shadow-level2 transition-shadow">
-                        <div class="bg-cover bg-center w-full h-48 border-b border-outline-variant/20"
-                             style="background-image: url('https://sarachoi077-code.github.io/honup-ebooks/images/BYOK.jpeg')"></div>
+                        
+                        <!-- CSS 그래픽 대표 이미지 헤더 -->
+                        <div class="relative w-full h-48 border-b border-outline-variant/20 overflow-hidden flex flex-col items-center justify-center p-4 select-none"
+                             style="background: radial-gradient(circle at 85% 20%, rgba(59, 130, 246, 0.35) 0%, transparent 50%), radial-gradient(circle at 15% 85%, rgba(139, 92, 246, 0.3) 0%, transparent 50%), #090d16;">
+                            
+                            <!-- 그리드 패턴 배경 레이어 -->
+                            <div class="absolute inset-0 opacity-15"
+                                 style="background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px); background-size: 20px 20px;"></div>
+                    
+                            <!-- 중앙 테크 배지 & 타이틀 -->
+                            <div class="relative z-10 flex flex-col items-center gap-2">
+                                <!-- 상단 펄스 태그 -->
+                                <div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-400 text-[11px] font-mono font-semibold tracking-wider uppercase backdrop-blur-sm">
+                                    <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span>SPEC-DRIVEN DEV</span>
+                                </div>
+                                
+                                <!-- 메인 로고 텍스트 -->
+                                <div class="text-white font-extrabold text-lg tracking-tight flex items-center justify-center gap-1 drop-shadow-md">
+                                    <span class="text-blue-400 font-mono">&lt;</span>
+                                    <span style="background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                                        VIBE CODING
+                                    </span>
+                                    <span class="text-blue-400 font-mono">/&gt;</span>
+                                </div>
+                    
+                                <!-- 3단계 흐름 칩 (기획 -> 개발 -> 배포) -->
+                                <div class="flex items-center gap-1.5 text-[10px] font-medium text-slate-300 mt-1">
+                                    <span class="px-2 py-0.5 rounded bg-blue-950/80 border border-blue-500/30 text-blue-300">기획</span>
+                                    <span class="text-blue-400/60 font-bold">→</span>
+                                    <span class="px-2 py-0.5 rounded bg-purple-950/80 border border-purple-500/30 text-purple-300">개발</span>
+                                    <span class="text-purple-400/60 font-bold">→</span>
+                                    <span class="px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/30 text-emerald-300">배포</span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- 카드 본문 내용 -->
                         <div class="p-md flex flex-col flex-grow">
                             <h3
                                 class="font-headline-md text-headline-md text-primary mb-xs line-clamp-2"
